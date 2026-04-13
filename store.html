@@ -9,7 +9,7 @@
 <body>
 
 <header>
-    <h1>AGAICNELAB</h1>
+    <img src="https://i.ibb.co/VWp23WYK/image.png" alt="AGAICNELAB logo" class="logo">
     <nav>
         <a href="index.html">Home</a>
         <a href="store.html">Shop</a>
@@ -20,122 +20,117 @@
 
     <section class="search-section">
         <input type="text" placeholder="Search">
-        <button class="btn">Filter</button>
+        <div class="filter-container">
+            <button class="btn" onclick="toggleDropdown()">Filter</button>
+            <div class="dropdown" id="dropdown">
+                <div onclick="selectSort('high-to-low')">High to Low</div>
+                <div onclick="selectSort('low-to-high')">Low to High</div>
+                <div onclick="selectSort('most-popular')">Most Popular</div>
+            </div>
+        </div>
     </section>
 
     <section class="product-section">
         <div class="products">
 
             <div class="card">
-                <div class="img"></div>
-                <p>Product Name</p>
-                <span class="old">$100</span>
+                <div class="img"><img src="https://i.ibb.co/GQ5k07wz/c8a05310-2f57-4fdd-ac34-af7b472232f4-removebg-preview.png" alt="Shopping bag"></div>
+                <p>AGAICNELAB Shopping Bag</p>
+                <span class="old">$999</span>
+                <span class="new">$500</span>
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="https://static-01.daraz.com.np/p/851feffdf4032b49d4bb3ba552de551d.jpg" alt="Watch"></div>
+                <p>Ben 10 x AGAICNELAB Collab Watch</p>
+                <span class="old">$9,999</span>
+                <span class="new">$5,000</span>
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="https://i.ibb.co/RTNZtPQr/d182cba3-7402-41ce-93d6-cfc9e178443a-removebg-preview.png" alt="Steam Deck"></div>
+                <p>Steam Deck x AGAICNELAB</p>
+                <span class="old">$99,999</span>
+                <span class="new">$50,000</span>
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="https://i.ibb.co/jvDLvCkL/0735f9fc-981a-4d6f-b663-d48fb64d9dbc.png" alt="Cardboard"></div>
+                <p>AGAICNELAB Cardboard</p>
+                <span class="old">$99</span>
                 <span class="new">$50</span>
             </div>
 
             <div class="card">
-                <div class="img"></div>
-                <p>Product Name</p>
-                <span class="old">$100</span>
-                <span class="new">$50</span>
+                <div class="img"><img src="https://i.ibb.co/tw2nh2b8/4d9dbbe3-b343-415c-afde-1a9805970223-removebg-preview.png" alt="Shirt"></div>
+                <p>AGAICNELAB T-Shirt</p>
+                <span class="price">$1,000,000</span>
             </div>
 
             <div class="card">
-                <div class="img"></div>
-                <p>Product Name</p>
-                <span class="old">$100</span>
-                <span class="new">$50</span>
+                <div class="img"><img src="https://images.squarespace-cdn.com/content/v1/55f22041e4b04da418dba224/0278087d-b37d-4955-b985-1860ce9a896c/balenciaga-spring-summer-2003-blue-silk-knit-top-sheer-pockets-cargo-vintage-archive-y2k-nicolas-ghesquiere.png?format=1000w" alt="whatever ts is"></div>
+                <p>AGAICNELAB 2003 Whatever TS Is</p>
+                <span class="price">$1,000</span>
             </div>
 
             <div class="card">
-                <div class="img"></div>
-                <p>Product Name</p>
-                <span class="old">$100</span>
-                <span class="new">$50</span>
+                <div class="img"><img src="https://i.ibb.co/21znYhGD/1bceb5a5-70cf-4c15-b6db-1ff7f7976347.png" alt="Plate-"></div>
+                <p>AGAICNELAB Plate</p>
+                <span class="price">$100</span>
             </div>
 
             <div class="card">
-                <div class="img"></div>
-                <p>Product Name</p>
-                <span class="old">$100</span>
-                <span class="new">$50</span>
+                <div class="img"><img src="https://i.ibb.co/zWgd4S7Q/e00af966-7966-46e9-b804-9a912c511edd.png" alt="Cup"></div>
+                <p>AGAICNELAB Cup</p>
+                <span class="price">$67</span>
             </div>
 
             <div class="card">
-                <div class="img"></div>
-                <p>Product Name</p>
-                <span class="old">$100</span>
-                <span class="new">$50</span>
+                <div class="img"><img src="https://i.ibb.co/Y4PkKLjc/e96bc72f-a954-4c0a-920f-921237f099a8-1-removebg-preview.png" alt="Hoodie"></div>
+                <p>AGAICNELAB Hoodie</p>
+                <span class="price">$670</span>
             </div>
 
             <div class="card">
-                <div class="img"></div>
-                <p>Product Name</p>
-                <span class="old">$100</span>
-                <span class="new">$50</span>
+                <div class="img"><img src="https://i.ibb.co/Rp6H67PS/3078429a-25fa-4d29-abcf-05f8b161b45d-removebg-preview.png" alt="Shoes"></div>
+                <p>AGAICNELAB Shoes</p>
+                <span class="price">$6,700</span>
             </div>
 
             <div class="card">
-                <div class="img"></div>
-                <p>Product Name</p>
-                <span class="old">$100</span>
-                <span class="new">$50</span>
+                <div class="img"><img src="https://i.ibb.co/JjY1ckBp/da4f4fda-60c0-443d-a61e-bcf1f29202c4-removebg-preview.png" alt="Backpack"></div>
+                <p>AGAICNELAB Backpack</p>
+                <span class="price">$676,767</span>
             </div>
 
             <div class="card">
-                <div class="img"></div>
-                <p>Product Name</p>
-                <span class="old">$100</span>
-                <span class="new">$50</span>
+                <div class="img"><img src="https://i.ibb.co/d0KrK9xm/f55a85f0-6298-4dd1-a30c-eb16220d3332-removebg-preview.png" alt="Chocolate"></div>
+                <p>AGAICNELAB Chocolate</p>
+                <span class="price">$67</span>
             </div>
 
             <div class="card">
-                <div class="img"></div>
-                <p>Product Name</p>
-                <span class="old">$100</span>
-                <span class="new">$50</span>
+                <div class="img"><img src="https://i.ibb.co/TxzHWJBm/01b50711-7bc8-4008-995d-439b5517ce57-removebg-preview.png" alt="Twix"></div>
+                <p>AGAICNELAB Kanye West Twitch.</p>
+                <span class="price">$67</span>
             </div>
 
             <div class="card">
-                <div class="img"></div>
-                <p>Product Name</p>
-                <span class="old">$100</span>
-                <span class="new">$50</span>
+                <div class="img"><img src="https://gardentm.com/cdn/shop/files/BALENCIAGADENIMO_SYOUARETHEWORLDJACKET.png?v=1752432889" alt="Denim Jacket"></div>
+                <p>AGAICNELAB Unc Denim Jacket</p>
+                <span class="price">$6700</span>
             </div>
 
             <div class="card">
-                <div class="img"></div>
-                <p>Product Name</p>
-                <span class="old">$100</span>
-                <span class="new">$50</span>
+                <div class="img"><img src="https://cdn.shopify.com/s/files/1/0274/8248/8897/products/657683TKVF41070.png?v=1749748808&width=800" alt="PS5"></div>
+                <p>AGAICNELAB PS5 Hoodie</p>
+                <span class="price">$67,000,000</span>
             </div>
 
             <div class="card">
-                <div class="img"></div>
-                <p>Product Name</p>
-                <span class="old">$100</span>
-                <span class="new">$50</span>
-            </div>
-
-            <div class="card">
-                <div class="img"></div>
-                <p>Product Name</p>
-                <span class="old">$100</span>
-                <span class="new">$50</span>
-            </div>
-
-            <div class="card">
-                <div class="img"></div>
-                <p>Product Name</p>
-                <span class="old">$100</span>
-                <span class="new">$50</span>
-            </div>
-
-            <div class="card">
-                <div class="img"></div>
-                <p>Product Name</p>
-                <span class="old">$100</span>
-                <span class="new">$50</span>
+                <div class="img"><img src="https://www.rvt.lv/wp-content/uploads/2021/06/IMG_1773-1024x653.jpg" alt="AGAICNELAB RVT Dorms"></div>
+                <p>AGAICNELAB RVT Dorms</p>
+                <span class="price">$67</span>
             </div>
 
         </div>
@@ -151,6 +146,52 @@
     </div>
     <p>© 2026 AGAICNELAB. All rights reserved.</p>
 </footer>
+
+<script>
+let originalCards = Array.from(document.querySelector('.products').children);
+
+function toggleDropdown() {
+    const dropdown = document.getElementById('dropdown');
+    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+}
+
+function getPrice(card) {
+    let priceSpan = card.querySelector('.new') || card.querySelector('.price');
+    if (!priceSpan) return 0;
+    let priceText = priceSpan.textContent.replace('$', '').replace(/,/g, '').replace(/\./g, '');
+    return parseInt(priceText) || 0;
+}
+
+function selectSort(order) {
+    const btn = document.querySelector('.btn');
+    const products = document.querySelector('.products');
+    if (order === 'high-to-low') {
+        btn.textContent = 'High to Low';
+    } else if (order === 'low-to-high') {
+        btn.textContent = 'Low to High';
+    } else if (order === 'most-popular') {
+        btn.textContent = 'Filter';
+    }
+    document.getElementById('dropdown').style.display = 'none';
+
+    let cards;
+    if (order === 'most-popular' || order === 'default') {
+        cards = originalCards;
+    } else {
+        cards = Array.from(products.children);
+        cards.sort((a, b) => {
+            const priceA = getPrice(a);
+            const priceB = getPrice(b);
+            if (order === 'high-to-low') {
+                return priceB - priceA;
+            } else {
+                return priceA - priceB;
+            }
+        });
+    }
+    cards.forEach(card => products.appendChild(card));
+}
+</script>
 
 </body>
 </html>
